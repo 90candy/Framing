@@ -21,6 +21,8 @@
 		3657E5C41E1E238F0079C0C7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5C31E1E238F0079C0C7 /* MessageViewController.m */; };
 		3657E5C71E1E239F0079C0C7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5C61E1E239F0079C0C7 /* MineViewController.m */; };
 		3657E5CB1E1E24460079C0C7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5CA1E1E24460079C0C7 /* BaseViewController.m */; };
+		36C4D0C91E1E421C003649D4 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4D0C81E1E421C003649D4 /* Response.m */; };
+		36C4D0D11E1E4BBD003649D4 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4D0D01E1E4BBD003649D4 /* NetworkRequest.m */; };
 		3E794CFF6DE52A58BEFE8F93 /* libPods-项目框架 - by Candy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20DCCBD93E5A23267C792E /* libPods-项目框架 - by Candy.a */; };
 		CF7ACAD1096D7E94A5BA08AD /* libPods-项目框架 - by CandyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8196D0F4817F25C13E6665FD /* libPods-项目框架 - by CandyTests.a */; };
 		F42921100C076702292C6C94 /* libPods-项目框架 - by CandyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5E7E319755A5563316FB /* libPods-项目框架 - by CandyUITests.a */; };
@@ -76,6 +78,11 @@
 		3657E5CE1E1E25E50079C0C7 /* Adaption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaption.h; sourceTree = "<group>"; };
 		3657E5CF1E1E26000079C0C7 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		3657E5D21E1E293D0079C0C7 /* PrefixHeaderPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderPCH.pch; sourceTree = "<group>"; };
+		36C4D0C71E1E421C003649D4 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		36C4D0C81E1E421C003649D4 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		36C4D0CD1E1E428B003649D4 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
+		36C4D0CF1E1E4BBD003649D4 /* NetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		36C4D0D01E1E4BBD003649D4 /* NetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
 		46C6C1C68098026FFE281B34 /* Pods-项目框架 - by Candy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-项目框架 - by Candy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-项目框架 - by Candy/Pods-项目框架 - by Candy.debug.xcconfig"; sourceTree = "<group>"; };
 		5867C9B2232C7CB9DDED92D0 /* Pods-项目框架 - by Candy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-项目框架 - by Candy.release.xcconfig"; path = "Pods/Target Support Files/Pods-项目框架 - by Candy/Pods-项目框架 - by Candy.release.xcconfig"; sourceTree = "<group>"; };
 		8196D0F4817F25C13E6665FD /* libPods-项目框架 - by CandyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-项目框架 - by CandyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +231,7 @@
 			children = (
 				3657E5CE1E1E25E50079C0C7 /* Adaption.h */,
 				3657E5CF1E1E26000079C0C7 /* Config.h */,
+				36C4D0CD1E1E428B003649D4 /* RequestURL.h */,
 			);
 			path = "MacroDefine(宏定义)";
 			sourceTree = "<group>";
@@ -231,6 +239,10 @@
 		3657E59A1E1E1F390079C0C7 /* Networking(网络请求) */ = {
 			isa = PBXGroup;
 			children = (
+				36C4D0C71E1E421C003649D4 /* Response.h */,
+				36C4D0C81E1E421C003649D4 /* Response.m */,
+				36C4D0CF1E1E4BBD003649D4 /* NetworkRequest.h */,
+				36C4D0D01E1E4BBD003649D4 /* NetworkRequest.m */,
 			);
 			path = "Networking(网络请求)";
 			sourceTree = "<group>";
@@ -520,7 +532,7 @@
 		3657E5581E1E1D5C0079C0C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = Candy;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Candy;
 				TargetAttributes = {
@@ -735,9 +747,11 @@
 			files = (
 				3657E56B1E1E1D5C0079C0C7 /* ViewController.m in Sources */,
 				3657E5CB1E1E24460079C0C7 /* BaseViewController.m in Sources */,
+				36C4D0C91E1E421C003649D4 /* Response.m in Sources */,
 				3657E5681E1E1D5C0079C0C7 /* AppDelegate.m in Sources */,
 				3657E5C71E1E239F0079C0C7 /* MineViewController.m in Sources */,
 				3657E5B41E1E21E30079C0C7 /* MainTabBarController.m in Sources */,
+				36C4D0D11E1E4BBD003649D4 /* NetworkRequest.m in Sources */,
 				3657E5651E1E1D5C0079C0C7 /* main.m in Sources */,
 				3657E5C11E1E23790079C0C7 /* SchoolViewController.m in Sources */,
 				3657E5C41E1E238F0079C0C7 /* MessageViewController.m in Sources */,
@@ -896,6 +910,10 @@
 				INFOPLIST_FILE = "项目框架 - by Candy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.90candy.-------by-Candy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -911,6 +929,10 @@
 				INFOPLIST_FILE = "项目框架 - by Candy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.90candy.-------by-Candy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

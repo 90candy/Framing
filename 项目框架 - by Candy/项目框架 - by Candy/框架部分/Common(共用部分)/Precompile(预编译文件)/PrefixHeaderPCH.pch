@@ -11,6 +11,8 @@
 
 #import "Adaption.h"
 #import "Config.h"
+#import "RequestURL.h"
+#import "NetworkRequest.h"
 
 
 #endif /* PrefixHeaderPCH_pch */

@@ -4,7 +4,7 @@
 //
 //  Created by Candy on 17/1/5.
 //  Copyright © 2017年 Candy. All rights reserved.
-//
+//  屏幕适配文件
 
 #ifndef Adaption_h
 #define Adaption_h

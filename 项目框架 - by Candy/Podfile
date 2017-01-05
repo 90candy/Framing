@@ -16,5 +16,6 @@ target '项目框架 - by Candy' do
     inherit! :search_paths
     # Pods for testing
   end
+pod ‘AFNetworking’
 
 end

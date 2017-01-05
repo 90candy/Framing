@@ -4,7 +4,7 @@
 //
 //  Created by Candy on 17/1/5.
 //  Copyright © 2017年 Candy. All rights reserved.
-//
+//  配置文件
 
 #ifndef Config_h
 #define Config_h
