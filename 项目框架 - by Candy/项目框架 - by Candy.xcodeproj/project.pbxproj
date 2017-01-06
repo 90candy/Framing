@@ -19,8 +19,8 @@
 		3657E5BA1E1E22D90079C0C7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5B91E1E22D90079C0C7 /* HomeViewController.m */; };
 		3657E5C11E1E23790079C0C7 /* SchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5C01E1E23790079C0C7 /* SchoolViewController.m */; };
 		3657E5C41E1E238F0079C0C7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5C31E1E238F0079C0C7 /* MessageViewController.m */; };
-		3657E5C71E1E239F0079C0C7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5C61E1E239F0079C0C7 /* MineViewController.m */; };
 		3657E5CB1E1E24460079C0C7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5CA1E1E24460079C0C7 /* BaseViewController.m */; };
+		367E38541E1F2CAB00F61F85 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 367E38511E1F2CAB00F61F85 /* MineViewController.m */; };
 		36C4D0C91E1E421C003649D4 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4D0C81E1E421C003649D4 /* Response.m */; };
 		36C4D0D11E1E4BBD003649D4 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4D0D01E1E4BBD003649D4 /* NetworkRequest.m */; };
 		3E794CFF6DE52A58BEFE8F93 /* libPods-项目框架 - by Candy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20DCCBD93E5A23267C792E /* libPods-项目框架 - by Candy.a */; };
@@ -71,13 +71,13 @@
 		3657E5C01E1E23790079C0C7 /* SchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolViewController.m; sourceTree = "<group>"; };
 		3657E5C21E1E238F0079C0C7 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		3657E5C31E1E238F0079C0C7 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
-		3657E5C51E1E239F0079C0C7 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		3657E5C61E1E239F0079C0C7 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		3657E5C91E1E24460079C0C7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3657E5CA1E1E24460079C0C7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3657E5CE1E1E25E50079C0C7 /* Adaption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaption.h; sourceTree = "<group>"; };
 		3657E5CF1E1E26000079C0C7 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		3657E5D21E1E293D0079C0C7 /* PrefixHeaderPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderPCH.pch; sourceTree = "<group>"; };
+		367E38501E1F2CAB00F61F85 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		367E38511E1F2CAB00F61F85 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		36C4D0C71E1E421C003649D4 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		36C4D0C81E1E421C003649D4 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		36C4D0CD1E1E428B003649D4 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 				3657E59F1E1E1F390079C0C7 /* Home(首页) */,
 				3657E5AB1E1E1F390079C0C7 /* School(学校) */,
 				3657E5A31E1E1F390079C0C7 /* Message(消息) */,
-				3657E5BB1E1E235B0079C0C7 /* Mine(我的) */,
+				367E384E1E1F2CAB00F61F85 /* Mine(我的) */,
 			);
 			path = "模块部分";
 			sourceTree = "<group>";
@@ -397,40 +397,6 @@
 			path = "(Main)主框架";
 			sourceTree = "<group>";
 		};
-		3657E5BB1E1E235B0079C0C7 /* Mine(我的) */ = {
-			isa = PBXGroup;
-			children = (
-				3657E5BC1E1E235B0079C0C7 /* Controller */,
-				3657E5BD1E1E235B0079C0C7 /* Model */,
-				3657E5BE1E1E235B0079C0C7 /* View */,
-			);
-			name = "Mine(我的)";
-			path = "School(学校)/Mine(我的)";
-			sourceTree = "<group>";
-		};
-		3657E5BC1E1E235B0079C0C7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3657E5C51E1E239F0079C0C7 /* MineViewController.h */,
-				3657E5C61E1E239F0079C0C7 /* MineViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3657E5BD1E1E235B0079C0C7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3657E5BE1E1E235B0079C0C7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		3657E5C81E1E24460079C0C7 /* Controller(控制器)  */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +412,39 @@
 				3657E5D21E1E293D0079C0C7 /* PrefixHeaderPCH.pch */,
 			);
 			path = "Precompile(预编译文件)";
+			sourceTree = "<group>";
+		};
+		367E384E1E1F2CAB00F61F85 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				367E384F1E1F2CAB00F61F85 /* Controller */,
+				367E38521E1F2CAB00F61F85 /* Model */,
+				367E38531E1F2CAB00F61F85 /* View */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		367E384F1E1F2CAB00F61F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				367E38501E1F2CAB00F61F85 /* MineViewController.h */,
+				367E38511E1F2CAB00F61F85 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		367E38521E1F2CAB00F61F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		367E38531E1F2CAB00F61F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E397FED446CD20113CCED56C /* Pods */ = {
@@ -749,8 +748,8 @@
 				3657E5CB1E1E24460079C0C7 /* BaseViewController.m in Sources */,
 				36C4D0C91E1E421C003649D4 /* Response.m in Sources */,
 				3657E5681E1E1D5C0079C0C7 /* AppDelegate.m in Sources */,
-				3657E5C71E1E239F0079C0C7 /* MineViewController.m in Sources */,
 				3657E5B41E1E21E30079C0C7 /* MainTabBarController.m in Sources */,
+				367E38541E1F2CAB00F61F85 /* MineViewController.m in Sources */,
 				36C4D0D11E1E4BBD003649D4 /* NetworkRequest.m in Sources */,
 				3657E5651E1E1D5C0079C0C7 /* main.m in Sources */,
 				3657E5C11E1E23790079C0C7 /* SchoolViewController.m in Sources */,
