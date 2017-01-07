@@ -319,6 +319,10 @@ typedef void(^RequestCompletion)(Response * response);
 @end
 ```
 
-> [项目结构图展示](项目结构图.png)
+> 项目结构图展示
+
+<p align="center">
+<img src="https://git.oschina.net/candy90/Framing-By-Candy/blob/master/项目结构图.png" width="890" style="margin:0 auto" />
+</p>
 
 ### [项目下载 - 码云链接](https://git.oschina.net/candy90/Framing-By-Candy.git) -- by Candy
