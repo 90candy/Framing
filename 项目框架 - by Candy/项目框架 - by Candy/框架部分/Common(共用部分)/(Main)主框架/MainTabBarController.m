@@ -21,6 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initializUI];
+}
+
+//UITabBar改变默认高度
+- (void)viewWillLayoutSubviews{
+    CGRect tabFrame = self.tabBar.frame;
+    //这里也可根据屏幕大小进行改变工具条的高度
+    tabFrame.size.height = AAdaption(64);
+    tabFrame.origin.y = self.view.frame.size.height - AAdaption(64);
+    self.tabBar.frame = tabFrame;
+    //添加上自定义的工具条
+    //    [self.tabBar bringSubviewToFront:self.tabBarToolView];
+}
+
+- (void)initializUI {
     NSArray *viewControllers = @[[[HomeViewController alloc]init],[[SchoolViewController alloc]init],[[MessageViewController alloc]init],[[MineViewController alloc]init]];
     //标签控制器 - 标题
     NSArray *tabBarItemTitle = @[@"首 页",@"学 校",@"消 息",@"我 的"];
@@ -47,7 +62,7 @@
         [_VCArray addObject:nav];
     }
     
-    //设置标签栏风格(默认高度49)
+    //设置标签栏风格(默认高度49 - 上面有自定义高度方法)
     self.tabBar.barStyle = UIBarStyleBlack;
     //设置初始状态选中的下标
     self.selectedIndex = 3;
@@ -57,6 +72,7 @@
     self.tabBar.barTintColor = [UIColor lightGrayColor];
     self.delegate = self;
     self.viewControllers = _VCArray;
+
 }
 
 @end
