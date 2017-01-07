@@ -319,4 +319,6 @@ typedef void(^RequestCompletion)(Response * response);
 @end
 ```
 
+> [项目结构图展示](项目结构图.png)
+
 ### [项目下载 - 码云链接](https://git.oschina.net/candy90/Framing-By-Candy.git) -- by Candy
