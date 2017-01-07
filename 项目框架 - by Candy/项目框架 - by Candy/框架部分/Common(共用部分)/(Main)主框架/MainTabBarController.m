@@ -27,9 +27,9 @@
 //UITabBar改变默认高度
 - (void)viewWillLayoutSubviews{
     CGRect tabFrame = self.tabBar.frame;
-    //这里也可根据屏幕大小进行改变工具条的高度
-    tabFrame.size.height = AAdaption(64);
-    tabFrame.origin.y = self.view.frame.size.height - AAdaption(64);
+    //这里也可根据屏幕大小进行改变工具条的高度AAdaption(60.0)
+    tabFrame.size.height = 50.0;
+    tabFrame.origin.y = self.view.frame.size.height - 50.0;
     self.tabBar.frame = tabFrame;
     //添加上自定义的工具条
     //    [self.tabBar bringSubviewToFront:self.tabBarToolView];
@@ -58,8 +58,9 @@
         vc.title = tabBarItemTitle[i];
         UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:vc];
         //设置导航控制器主题色
-        nav.navigationBar.barTintColor = COLOR_RGB(235, 235, 235, 0.2);
-        nav.view.backgroundColor = COLOR_RGB(235, 235, 235, 0.9);
+        [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        nav.navigationBar.barTintColor = [UIColor blackColor];
+//        nav.view.backgroundColor = COLOR_RGB(235, 235, 235, 0.9);
         [_VCArray addObject:nav];
     }
     
@@ -70,7 +71,7 @@
     //设置标签栏文字和图片的颜色
     self.tabBar.tintColor = [UIColor whiteColor];
     //设置标签栏的颜色
-    self.tabBar.barTintColor = [UIColor lightGrayColor];
+    self.tabBar.barTintColor = [UIColor blackColor];
     self.delegate = self;
     self.viewControllers = _VCArray;
 
