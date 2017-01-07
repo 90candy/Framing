@@ -30,5 +30,4 @@ typedef void(^RequestCompletion)(Response * response);
                    DataKey:(NSString *)dataKey
          CompletionHandler:(RequestCompletion)completionHandler;
 
-
 @end
