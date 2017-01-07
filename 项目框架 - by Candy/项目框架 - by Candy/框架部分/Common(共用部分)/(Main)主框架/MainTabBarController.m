@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //界面初始化
     [self initializUI];
 }
 
@@ -44,7 +44,7 @@
     //标签控制器 - 选中图片
     NSArray *tabBarItemSelectedImageName = @[@"menu_home_selected", @"menu_school_selected", @"menu_interactive_selected", @"menu_mine_selected"];
     _VCArray = [NSMutableArray array];
-    
+    //循环赋值
     for (int i = 0; i<viewControllers.count; i++) {
         UIViewController * vc = viewControllers[i];
         //方法一：直接初始化
@@ -57,6 +57,7 @@
         vc.tabBarItem = item;
         vc.title = tabBarItemTitle[i];
         UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        //设置导航控制器主题色
         nav.navigationBar.barTintColor = COLOR_RGB(235, 235, 235, 0.2);
         nav.view.backgroundColor = COLOR_RGB(235, 235, 235, 0.9);
         [_VCArray addObject:nav];
