@@ -263,7 +263,21 @@ typedef void(^RequestCompletion)(Response * response);
 #pragma mark -- 单文件上传
 
 + (void)startUploadRequest:(NSString *)urlString ImageUrl:(NSString *)imageUrl Parameters:(NSDictionary *)parameters DataKey:(NSString *)dataKey CompletionHandler:(RequestCompletion)completionHandler {
-    
+    AFHTTPSessionManager *manager = [self sessionManager];
+    [manager POST:[NSString stringWithFormat:@"%@%@",SEVER_URL,urlString] parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+        [formData appendPartWithFileData:imageData
+                                    name:@"file"
+                                fileName:@"image.jpg"
+                                mimeType:@"image/jpg"];
+        
+    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [self handlerResponse:responseObject error:nil DataKey:dataKey CompletionHandler:completionHandler];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self handlerResponse:nil error:error DataKey:dataKey CompletionHandler:completionHandler];
+        
+    }];
 }
 
 #pragma mark -- Private(私有方法)
