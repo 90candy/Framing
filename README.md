@@ -2,6 +2,12 @@
 
 ### 1.项目的基本框架的搭建（带标签控制器）
 ### 2.基本网络请求的封装（使用的AFNetworking）
+#### 注意事项：
+	 在下载该框架以后，请先执行	"pod install" 进行第三方框架的下载
+	 该框架适用于一些初入门的新手交流学习，避免走了弯路，欢迎借鉴，谢谢！
+	 有什么好的建议可以在底部下方给我留言，
+	 也可发邮件到我的邮箱：90candy.com@gmail.com
+	 
 
 ##### 代码展示
 > 预编译文件 "PrefixHeaderPCH.pch"
@@ -65,7 +71,7 @@
 #define Inline static inline
 
 
-//适配比率
+//适配比例
 Inline CGFloat AAdaptionWidth() {
     return SCREEN_WIDTH / BaseWidth;
 }
@@ -73,6 +79,11 @@ Inline CGFloat AAdaptionWidth() {
 //尺寸适配
 Inline CGFloat AAdaption(CGFloat x) {
     return x * AAdaptionWidth();
+}
+
+//字体适配
+Inline UIFont * AAFont(CGFloat font){
+return [UIFont systemFontOfSize:font*AAdaptionWidth()];
 }
 
 Inline CGSize AAdaptionSize(CGFloat width, CGFloat height) {
@@ -103,10 +114,6 @@ Inline CGRect AAdaptionRectFromFrame(CGRect frame){
     return CGRectMake(newX, newY, newW, newH);
 }
 
-//字体适配
-Inline UIFont * AAFont(CGFloat font){
-    return [UIFont systemFontOfSize:font*AAdaptionWidth()];
-}
 
 #endif /* Adaption_h */
 ```
