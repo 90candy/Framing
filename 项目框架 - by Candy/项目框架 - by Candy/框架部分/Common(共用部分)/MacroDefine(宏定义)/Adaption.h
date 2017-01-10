@@ -25,8 +25,7 @@
 
 #define Inline static inline
 
-
-//适配比率
+//适配比例
 Inline CGFloat AAdaptionWidth() {
     return SCREEN_WIDTH / BaseWidth;
 }
@@ -35,6 +34,12 @@ Inline CGFloat AAdaptionWidth() {
 Inline CGFloat AAdaption(CGFloat x) {
     return x * AAdaptionWidth();
 }
+
+//字体适配
+Inline UIFont * AAFont(CGFloat font){
+    return [UIFont systemFontOfSize:font*AAdaptionWidth()];
+}
+
 
 Inline CGSize AAdaptionSize(CGFloat width, CGFloat height) {
     CGFloat newWidth = width * AAdaptionWidth();
@@ -62,11 +67,6 @@ Inline CGRect AAdaptionRectFromFrame(CGRect frame){
     CGFloat newW = frame.size.width*AAdaptionWidth();
     CGFloat newH = frame.size.height*AAdaptionWidth();
     return CGRectMake(newX, newY, newW, newH);
-}
-
-//字体适配
-Inline UIFont * AAFont(CGFloat font){
-    return [UIFont systemFontOfSize:font*AAdaptionWidth()];
 }
 
 #endif /* Adaption_h */
