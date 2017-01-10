@@ -9,11 +9,11 @@
 	 也可发邮件到我的邮箱：90candy.com@gmail.com
 	 
 ##### 项目结构图展示	- [点击查看项目结构截图](项目结构图.png)
-
-<img src="项目结构图.png" width="890" style="margin:0 auto"/>
-
-
-
+<html>
+	<body>
+		<img src="项目结构图.png" width="500" height="300" style="margin:0 auto"/>
+	</body>
+</html>
 ****
 ##### 代码展示
 > 预编译文件 "PrefixHeaderPCH.pch"
