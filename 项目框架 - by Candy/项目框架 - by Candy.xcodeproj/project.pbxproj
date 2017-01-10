@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362F6AB61E24B83800991706 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F6AB51E24B83800991706 /* UserModel.m */; };
 		3657E5651E1E1D5C0079C0C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5641E1E1D5C0079C0C7 /* main.m */; };
 		3657E5681E1E1D5C0079C0C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E5671E1E1D5C0079C0C7 /* AppDelegate.m */; };
 		3657E56B1E1E1D5C0079C0C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657E56A1E1E1D5C0079C0C7 /* ViewController.m */; };
@@ -55,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		305D5E7E319755A5563316FB /* libPods-项目框架 - by CandyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-项目框架 - by CandyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		362F6AB41E24B83800991706 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		362F6AB51E24B83800991706 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		3657E5601E1E1D5C0079C0C7 /* 项目框架 - by Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "项目框架 - by Candy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3657E5641E1E1D5C0079C0C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3657E5661E1E1D5C0079C0C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -476,6 +479,8 @@
 		367E38521E1F2CAB00F61F85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				362F6AB41E24B83800991706 /* UserModel.h */,
+				362F6AB51E24B83800991706 /* UserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -794,6 +799,7 @@
 			files = (
 				3657E56B1E1E1D5C0079C0C7 /* ViewController.m in Sources */,
 				3657E5CB1E1E24460079C0C7 /* BaseViewController.m in Sources */,
+				362F6AB61E24B83800991706 /* UserModel.m in Sources */,
 				36C4D0C91E1E421C003649D4 /* Response.m in Sources */,
 				3657E5681E1E1D5C0079C0C7 /* AppDelegate.m in Sources */,
 				3657E5B41E1E21E30079C0C7 /* MainTabBarController.m in Sources */,
