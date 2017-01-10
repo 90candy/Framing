@@ -8,11 +8,12 @@
 	 有什么好的建议可以在底部下方给我留言，
 	 也可发邮件到我的邮箱：90candy.com@gmail.com
 	 
-##### 项目结构图展示
+##### 项目结构图展示	- [点击查看项目结构截图](项目结构图.png)
 
-<p align="center">
-<img src="项目结构图.png" width="890" style="margin:0 auto" />
-</p>
+<img src="项目结构图.png" width="890" style="margin:0 auto"/>
+
+
+
 ****
 ##### 代码展示
 > 预编译文件 "PrefixHeaderPCH.pch"
