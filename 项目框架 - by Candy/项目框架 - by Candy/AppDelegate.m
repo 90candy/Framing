@@ -10,6 +10,8 @@
 
 #import "MainTabBarController.h"
 
+#import <IQKeyboardManager/IQKeyboardManager.h>
+
 @interface AppDelegate ()
 
 @end
@@ -22,6 +24,8 @@
     
     //加载主框架
     [self initializeRootVC];
+    
+    [IQKeyboardManager sharedManager].enable = YES;
     
     return YES;
 }

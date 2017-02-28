@@ -20,8 +20,8 @@
 
 #pragma 参照尺寸
 
-#define BaseWidth 414
-#define BaseHeight 736
+#define BaseWidth 320
+#define BaseHeight 568
 
 #define Inline static inline
 

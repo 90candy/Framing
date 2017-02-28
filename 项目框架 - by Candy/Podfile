@@ -16,6 +16,9 @@ target '项目框架 - by Candy' do
     inherit! :search_paths
     # Pods for testing
   end
-pod ‘AFNetworking’
+#网络请求
+pod 'AFNetworking'
+#键盘回收管理
+pod 'IQKeyboardManager'
 
 end

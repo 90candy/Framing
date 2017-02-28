@@ -582,7 +582,7 @@
 				TargetAttributes = {
 					3657E55F1E1E1D5C0079C0C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4K988BA25S;
+						DevelopmentTeam = BYAE8N7CDV;
 						ProvisioningStyle = Automatic;
 					};
 					3657E5781E1E1D5C0079C0C7 = {
@@ -958,7 +958,7 @@
 			baseConfigurationReference = 46C6C1C68098026FFE281B34 /* Pods-项目框架 - by Candy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4K988BA25S;
+				DEVELOPMENT_TEAM = BYAE8N7CDV;
 				GCC_PREFIX_HEADER = "项目框架 - by Candy/框架部分/Common(共用部分)/Precompile(预编译文件)/PrefixHeaderPCH.pch";
 				INFOPLIST_FILE = "项目框架 - by Candy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -977,7 +977,7 @@
 			baseConfigurationReference = 5867C9B2232C7CB9DDED92D0 /* Pods-项目框架 - by Candy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4K988BA25S;
+				DEVELOPMENT_TEAM = BYAE8N7CDV;
 				GCC_PREFIX_HEADER = "项目框架 - by Candy/框架部分/Common(共用部分)/Precompile(预编译文件)/PrefixHeaderPCH.pch";
 				INFOPLIST_FILE = "项目框架 - by Candy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
